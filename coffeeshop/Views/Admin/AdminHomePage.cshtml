@@ -1,0 +1,96 @@
+﻿@model coffeeshop.Models.UserLogin
+@{
+    ViewBag.Title = "AdminHomePage";
+}
+
+<h2>Welcome @Model.UserName</h2>
+
+<body>
+    <hr />
+    <div class="image-banner">
+        <img src="~/img/CafeBanner.png" />
+    </div>
+    <div class="dropdown-vertically">
+        <ul>
+            <li><a href='@Url.Action("ProductsList", "Product")'>Adding/Removing items to Menu</a></li>
+            <li>
+                <a href="#">Managing the sitting places</a>
+                <ul>
+                    <li><a href='@Url.Action("TablesList", "Table")'>Inside & Outside</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <img class="img1" src="~/img/coffee-beans.png">
+    <img class="img2" src="~/img/coffee-beans.png">
+
+</body>
+
+<style>
+    body {
+        background-color: #f2ead4;
+    }
+
+    .image-banner {
+        margin-left: 18%;
+    }
+
+    .img1 {
+        position: absolute;
+        top: 69%;
+        left: 32%;
+    }
+
+    .img2 {
+        position: absolute;
+        top: 76%;
+        left: 32%;
+    }
+
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    div.dropdown-vertically {
+        margin-left: 30%;
+        margin-top: 5%;
+        position: center;
+        width: 380px;
+    }
+
+        div.dropdown-vertically ul {
+            list-style: none;
+            background-color: #9f815e;
+            font-size: 20px;
+        }
+
+        div.dropdown-vertically li {
+            position: relative;
+            border: 2px solid black;
+        }
+
+        div.dropdown-vertically a {
+            display: block;
+            text-decoration: none;
+            padding: 10px;
+            color: black;
+        }
+
+        div.dropdown-vertically li:hover > a {
+            background: black;
+            color: navajowhite;
+        }
+
+        div.dropdown-vertically ul ul {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            visibility: hidden;
+        }
+
+        div.dropdown-vertically li:hover > ul {
+            left: 100%;
+            visibility: visible;
+        }
+</style>

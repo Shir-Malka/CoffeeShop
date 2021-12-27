@@ -1,0 +1,15 @@
+Espresso 2.00
+Doppio 4.00
+EspressoMacchiato 4.00
+EspressoConpana 4.00
+
+Americano 5.00
+Cappuccino 6.00
+Latte 6.00
+Irish 7.00
+
+Fredo 7.00
+Frappe 7.00
+Mocha 7.00
+CaramelMacchiato 7.00
+

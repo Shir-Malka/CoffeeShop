@@ -1,0 +1,54 @@
+﻿@{
+    ViewBag.Title = "Home";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    
+</head>
+<body style="background-color: #5c1702">
+    <marquee behavior="scroll" direction="left"><p style="color:khaki"><font size="+3" />Buy 10cups Get 1 Free!</marquee></p>
+    <marquee behavior="scroll" direction="left"><p style="color:gold"><font size="+4" />Coffee&Cookie 10$ price</marquee></p>
+
+    <img class="img1" onclick="GotoUserController()" src="~/img/coffeeshopPromo.png">
+    <img class="img2" src="~/img/coffeandcookie.jpg">
+    <img class="img3" src="~/img/coffeebrown.png" />
+
+
+</body>
+</html>
+
+<script>
+    function GotoUserController() {
+        document.location.href = '@Url.Action("Register", "User")';
+    }
+</script>
+
+<style>
+
+    .img1 {
+        position: absolute;
+        border-radius: 2%;
+        cursor: pointer;
+        top: 24%;
+        left: 23%;
+    }
+
+    .img2 {
+        position: absolute;
+        height: 400px;
+        width: 300px;
+        top: 45%;
+        left: 3%;
+    }
+
+    .img3 {
+        position: absolute;
+        height: 260px;
+        width: 300px;
+        top: 10%;
+        left: 3%;
+    }
+
+</style>
+
